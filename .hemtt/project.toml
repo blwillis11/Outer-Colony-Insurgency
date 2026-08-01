@@ -1,0 +1,30 @@
+name = "Outer Colony Insurgency"
+author = "OCI Dev Team"
+prefix = "OCI"
+mainprefix = "z"
+
+include = [
+    "mod.cpp",
+    "meta.cpp",
+    "LICENSE",
+    "logo_co.paa",
+]
+
+[hemtt.launch.default]
+workshop = [
+    "450814997",  # CBA_A3
+]
+presets = [
+    "Test2"
+]
+parameters = [
+    "-world=empty",
+    "-noSplash",
+    "-showScriptErrors",
+    "-debug"
+]
+executable = "arma3profiling_x64"
+mission = "OCITesting.flat_green_terrain"
+
+[version]
+path = "addons/main/script_version.hpp"
