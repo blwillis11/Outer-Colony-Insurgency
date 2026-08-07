@@ -37,11 +37,6 @@ class CfgVehicles
     {
         editorSubcategory = "OCI_Infantry_Arid_EdSubCat";
         uniformClass = "OCLF_U_B_CBUU_FieldTop_QuarterRoll_Gloves_Kneepads_Arid";
-        allowedfacewear[] = {
-            "",1,
-            "TCP_G_TacticalGlasses_Red",.5,
-            "TCP_G_BalaclavaTacticalGlasses_Olive_Red",.5
-        };
     };
 
     class OCLF_Rifleman_Arid: OCLF_UnitBase_Arid

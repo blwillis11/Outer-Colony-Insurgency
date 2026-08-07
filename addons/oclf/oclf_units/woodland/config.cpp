@@ -30,6 +30,7 @@ class CfgPatches
         };
     };
 };
+class EventHandlers;
 class CfgVehicles
 {
 	class OCLF_UnitBase;
@@ -37,11 +38,6 @@ class CfgVehicles
     {
         editorSubcategory = "OCI_Infantry_Woodland_EdSubCat";
         uniformClass = "OCLF_U_B_CBUU_FieldTop_QuarterRoll_Gloves_Kneepads_Woodland";
-        allowedfacewear[] = {
-            "",1,
-            "TCP_G_TacticalGlasses_Red",.5,
-            "TCP_G_BalaclavaTacticalGlasses_Olive_Red",.5
-        };
     };
 
     class OCLF_Rifleman_Woodland: OCLF_UnitBase_Woodland
@@ -54,7 +50,8 @@ class CfgVehicles
         linkedItems[] = {"OCLF_V_M43A_BaseSec_2_Standard","OCLF_H_Helmet_CH43A_Standard","ItemMap","itemRadio","ItemCompass","ItemWatch"};
         respawnLinkedItems[] = {"OCLF_V_M43A_BaseSec_2_Standard","OCLF_H_Helmet_CH43A_Standard","ItemMap","itemRadio","ItemCompass","ItemWatch"};
         magazines[] = {"OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","TCP_M21_Smoke","TCP_M21_Smoke","TCP_M9I_Frag"};
-        respawnMagazines[] = {"OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","TCP_M21_Smoke","TCP_M21_Smoke","TCP_M9I_Frag"};    };
+        respawnMagazines[] = {"OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","TCP_M21_Smoke","TCP_M21_Smoke","TCP_M9I_Frag"};
+    };
 
     class OCLF_Rifleman_AT_Woodland: OCLF_UnitBase_Woodland
     {

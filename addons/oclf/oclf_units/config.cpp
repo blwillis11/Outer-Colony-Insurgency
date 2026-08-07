@@ -30,9 +30,13 @@ class CfgPatches
         };
     };
 };
+
 class CfgVehicles
 {
-	class O_Soldier_F;
+    class O_Soldier_base_F;
+	class O_Soldier_F : O_Soldier_base_F {
+		class EventHandlers;
+	};
     class OCLF_UnitBase: O_Soldier_F
     {
         scope = 0;
@@ -49,7 +53,26 @@ class CfgVehicles
         canDeactivateMines = 0;
         identityTypes[] = {"Head_Euro","LanguagePER_F","G_IRAN_default"};
         uniformClass = "OCLF_U_B_CBUU_FieldTop_QuarterRoll_Gloves_Kneepads_Standard";
-
+        OCI_Hats[] = {
+		};
+		OCI_Glasses[] = {
+            "None",2,
+            "TCP_G_TacticalGlasses_Red",1,
+            "TCP_G_BalaclavaTacticalGlasses_Green_Red",1,
+            "TCP_G_Balaclava_Green",1
+		};
+		OCI_Uniforms[] = {
+		};
+		OCI_Vests[] = {
+		};
+		OCI_Packs[] = {
+		};
+        class EventHandlers : EventHandlers {
+			class Randomize {
+				init = "if (local (_this # 0)) then {(_this # 0) call OCI_fnc_RandomizeGear;};";
+				respawn = "if (local (_this # 0)) then {(_this # 0) call OCI_fnc_RandomizeGear;};";
+			};
+		};
         items[] = {"ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","FirstAidKit"};
         respawnItems[] = {"ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","ACE_packingBandage","FirstAidKit"};
     };
@@ -63,7 +86,8 @@ class CfgVehicles
         linkedItems[] = {"OCLF_V_M43A_BaseSec_2_Standard","OCLF_H_Helmet_CH43A_Standard","ItemMap","itemRadio","ItemCompass","ItemWatch"};
         respawnLinkedItems[] = {"OCLF_V_M43A_BaseSec_2_Standard","OCLF_H_Helmet_CH43A_Standard","ItemMap","itemRadio","ItemCompass","ItemWatch"};
         magazines[] = {"OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","TCP_M21_Smoke","TCP_M21_Smoke","TCP_M9I_Frag"};
-        respawnMagazines[] = {"OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","TCP_M21_Smoke","TCP_M21_Smoke","TCP_M9I_Frag"};    };
+        respawnMagazines[] = {"OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","TCP_M21_Smoke","TCP_M21_Smoke","TCP_M9I_Frag"};
+    };
 
     class OCLF_Rifleman_AT: OCLF_UnitBase
     {

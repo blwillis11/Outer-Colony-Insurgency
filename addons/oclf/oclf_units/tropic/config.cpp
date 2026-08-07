@@ -37,11 +37,6 @@ class CfgVehicles
     {
         editorSubcategory = "OCI_Infantry_Tropic_EdSubCat";
         uniformClass = "OCLF_U_B_CBUU_FieldTop_QuarterRoll_Gloves_Kneepads_Tropic";
-        allowedfacewear[] = {
-            "",1,
-            "TCP_G_TacticalGlasses_Red",.5,
-            "TCP_G_BalaclavaTacticalGlasses_Green_Red",.5
-        };
     };
 
     class OCLF_Rifleman_Tropic: OCLF_UnitBase_Tropic

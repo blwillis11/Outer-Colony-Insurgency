@@ -148,11 +148,11 @@ class CfgVehicles {
         weapons[] = {"OCI_SRS99","OPTRE_M6G_SF", "Throw", "Put"};
         respawnWeapons[] = {"OCI_SRS99","OPTRE_M6G_SF", "Throw", "Put"};
 
-        linkedItems[] = {"OCI_M52B_BPG_Sniper","TCP_H_boonieHat_Folded_Left_Olive","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
-        respawnLinkedItems[] = {"OCI_M52B_BPG_Sniper","TCP_H_boonieHat_Folded_Left_Olive","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
+        linkedItems[] = {"OCI_M52B_BPG_Sniper","TCP_H_boonieHat_Folded_Left_Olive","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"OCI_M52B_BPG_Sniper","TCP_H_boonieHat_Folded_Left_Olive","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-        magazines[] = {"OCI_M232_145x114x4_APFSDS","OCI_M232_145x114x4_APFSDS","OCI_M232_145x114x4_APFSDS","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
-        respawnMagazines[] = {"OCI_M232_145x114x4_APFSDS","OCI_M232_145x114x4_APFSDS","OCI_M232_145x114x4_APFSDS","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
+        magazines[] = {"OCI_4Rnd_127x99_Mag_APFSDS","OCI_4Rnd_127x99_Mag_APFSDS","OCI_4Rnd_127x99_Mag_APFSDS","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
+        respawnMagazines[] = {"OCI_4Rnd_127x99_Mag_APFSDS","OCI_4Rnd_127x99_Mag_APFSDS","OCI_4Rnd_127x99_Mag_APFSDS","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
 
         items[] = {"ACE_EarPlugs","FirstAidKit"};
         respawnItems[] = {"ACE_EarPlugs","FirstAidKit"};

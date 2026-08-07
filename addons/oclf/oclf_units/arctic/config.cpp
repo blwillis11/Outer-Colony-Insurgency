@@ -37,11 +37,11 @@ class CfgVehicles
     {
         editorSubcategory = "OCI_Infantry_Arctic_EdSubCat";
         uniformClass = "OCLF_U_B_CBUU_FieldTop_QuarterRoll_Gloves_Kneepads_Arctic";
-        allowedfacewear[] = {
-            "",1,
-            "TCP_G_TacticalGlasses_Red",.5,
-            "TCP_G_BalaclavaTacticalGlasses_White_Red",.5
-        };
+        OCI_Glasses[] = {
+            "None",2,
+            "TCP_G_TacticalGlasses_Red",1,
+            "TCP_G_BalaclavaTacticalGlasses_White_Red",1
+		};
     };
 
     class OCLF_Rifleman_Arctic: OCLF_UnitBase_Arctic

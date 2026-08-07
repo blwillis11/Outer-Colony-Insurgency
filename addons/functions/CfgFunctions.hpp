@@ -23,5 +23,10 @@ class CfgFunctions{
             file = "z\OCI\addons\functions\hev";
             class HEV {};
         };
+        class Randomizer
+        {
+            file = "z\OCI\addons\functions\randomizer";
+            class RandomizeGear { };
+        };
     };
 };

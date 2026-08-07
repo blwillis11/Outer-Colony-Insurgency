@@ -35,6 +35,8 @@ class CfgVehicles
         backpack = "";
         identityTypes[] = {"Head_Euro","LanguagePER_F","G_IRAN_default"};
         uniformClass = "OCLF_U_B_CBUU_FieldTop_QuarterRoll_Gloves_Kneepads_Black";
+        OCI_Glasses[] = {
+		};
     };
     class OCLF_ORCS_Rifleman: OCLF_ORCS_UnitBase
     {

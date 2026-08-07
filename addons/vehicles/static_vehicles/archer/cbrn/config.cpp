@@ -38,19 +38,22 @@ class CfgAmmo
     class Optre_ammo_Missile_Cruise_01;
     class OCI_ammo_Missile_Cruise_01_Chemical_Type_1 : Optre_ammo_Missile_Cruise_01
     {
+        displayName = "Archer Missile Type 1 Chemical Warhead";
         CBRN_chemical = 1;
         CBRN_heightOfBurst = 25;
         CBRN_isProjectile = 1;
         CBRN_lifetime = 300;
-        CBRN_sprayWidth = 75;
+        CBRN_sprayWidth = 250;
     };
 };
 
+
+class Turrets;
+class MainTurret : Turrets {};
 class CfgVehicles
 {
     class OPTRE_Corvette_archer_system_INS;
-    class Turrets;
-    class MainTurret;
+    
     class OCI_Archer_Missile_System_Innie : OPTRE_Corvette_archer_system_INS
     {
         displayName="[OCI] Archer Missile System";

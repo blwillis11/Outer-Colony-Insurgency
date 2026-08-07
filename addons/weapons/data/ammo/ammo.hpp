@@ -65,7 +65,7 @@ class OCI_B_127x99_APFSDS:TCP_B_127x99_APFSDS
     hit=105;
     ACE_ballisticCoefficients[]= {0.757};
     ACE_muzzleVelocities[] = {1400,1400};
-    ACE_caliber=14.5;
+    ACE_caliber=12.7;
     ACE_bulletLength=50;
     ACE_bulletMass=65;
     ACE_ammoTempMuzzleVelocityShifts[]={-2.55,-2.47,-2.25,-2.1199999,-1.6799999,-1.28,-7.6399999,-1.3,0.58999997,1.51,2.6099999};

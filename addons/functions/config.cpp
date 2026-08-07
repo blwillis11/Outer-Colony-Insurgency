@@ -30,6 +30,7 @@ class CfgPatches {
 // configs go here
 #include "CfgVehicles.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgEventHandlers.hpp"
 
 class OPTRE_Zeus_RscCombo;
 class OPTRE_ZEUS_RscText;

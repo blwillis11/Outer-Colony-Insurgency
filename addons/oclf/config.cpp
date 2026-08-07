@@ -19,7 +19,8 @@ class CfgPatches
         requiredAddons[] =
         {
             "OCI_Main",
-            "OCI_Weapons"
+            "OCI_Weapons",
+			"OCI_Functions"
         };
     };
 };
