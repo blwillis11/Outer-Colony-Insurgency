@@ -20,10 +20,10 @@ class CfgPatches
         };
     };
 };
-class ItemInfo;
 class CfgWeapons
 {
-	class TCP_U_B_CBUU_FieldTop_Full_Gloves_Bloused_Kneepads_Gray;
+    class TCP_U_B_CBUU_FieldTop_Full_Gloves_Bloused_Kneepads_Base;
+	class TCP_U_B_CBUU_FieldTop_Full_Gloves_Bloused_Kneepads_Gray : TCP_U_B_CBUU_FieldTop_Full_Gloves_Bloused_Kneepads_Base {class ItemInfo; class TCP_equipmentTypes;};
 
     class PK_U_B_CBUU_FieldTop_Full_Gloves_Bloused_Kneepads_Gray: TCP_U_B_CBUU_FieldTop_Full_Gloves_Bloused_Kneepads_Gray
     {
@@ -33,6 +33,9 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass="PK_B_CBUU_FieldTop_Full_Gloves_Bloused_Kneepads_Gray";
+        };
+        class TCP_equipmentTypes : TCP_equipmentTypes {
+            baseEquipment="PK_U_B_CBUU_FieldTop_Full_Gloves_Bloused_Kneepads_Gray";
         };
     };
     

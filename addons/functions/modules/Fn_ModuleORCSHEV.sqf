@@ -73,7 +73,7 @@ private _bj_ret = [
 	_bjWaypoints,
 	_bjFinalWP,
 	east
-] call OCI_fnc_CS_ORCSHEV;
+] call OPTRE_fnc_CS_ORCSHEV;
 
 diag_log format ["ModuleORCSHEV: CS_ORCSHEV returned %1", _bj_ret];
 

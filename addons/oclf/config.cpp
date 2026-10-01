@@ -3,26 +3,15 @@
 
 class CfgPatches
 {
-    class OCI_OCLF
-    {
-        authors[] = {"B. Salmon"};
-        name = "Outer Colony Liberation Front";
-        
-        units[]=
-        {
-        };
-        weapons[]=
-        {
-        };
-        
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
-            "OCI_Main",
-            "OCI_Weapons",
-			"OCI_Functions"
-        };
-    };
+	class ADDON
+	{
+		addonRootClass = QUOTE(MAIN_ADDON);
+
+		name = QUOTE(COMPONENT_NAME);
+		units[] = {};
+		// Used for forcing load order
+		requiredAddons[] = {QUOTE(MAIN_ADDON)};
+	};
 };
 
 class CfgTCPRanks
@@ -255,40 +244,81 @@ class CfgTCPRanks
 
 class CfgFactionClasses
 {
-    class OCLF
+    class OCI_OCLF_Army
     {
-        displayName = "[OCLF] Outer Colony Liberation Front";
-        side = 0;
-        flag = "data\OCLFFlag.paa";
-        icon = "data\OCLFLogo.paa";
-        priority = 0;
+        displayName = "[OCI] OCLF Army";
+        priority = 0; // Position in list.
+        side = 0; // Opfor = 0, Blufor = 1, Indep = 2.
+        icon = ""; //Custom Icon
     };
-}; 
-class ItemInfo;
-class TCP_equipmentTypes;
-class CfgWeapons
-{
-	
-    #include "vests.hpp"
-	#include "headgear.hpp"
+    class OCI_O_OCLF_A_A
+    {
+        displayName = "[OCI] OCLF Army (Arctic)";
+        priority = 0; // Position in list.
+        side = 0; // Opfor = 0, Blufor = 1, Indep = 2.
+        icon = ""; //Custom Icon
+    };
+    class OCI_O_OCLF_A_D
+    {
+        displayName = "[OCI] OCLF Army (Desert)";
+        priority = 0; // Position in list.
+        side = 0; // Opfor = 0, Blufor = 1, Indep = 2.
+        icon = ""; //Custom Icon
+    };
+    class OCI_O_OCLF_A_O
+    {
+        displayName = "[OCI] OCLF Army (ORCS)";
+        priority = 0; // Position in list.
+        side = 0; // Opfor = 0, Blufor = 1, Indep = 2.
+        icon = ""; //Custom Icon
+    };
+    class OCI_O_OCLF_A_T
+    {
+        displayName = "[OCI] OCLF Army (Tropic)";
+        priority = 0; // Position in list.
+        side = 0; // Opfor = 0, Blufor = 1, Indep = 2.
+        icon = ""; //Custom Icon
+    };
+    class OCI_O_OCLF_A_W
+    {
+        displayName = "[OCI] OCLF Army (Woodland)";
+        priority = 0; // Position in list.
+        side = 0; // Opfor = 0, Blufor = 1, Indep = 2.
+        icon = ""; //Custom Icon
+    };
+    class OCI_O_OCLF_A_AAC
+    {
+        displayName = "[OCI] OCLF Army (Air Assault Corps)";
+        priority = 0; // Position in list.
+        side = 0; // Opfor = 0, Blufor = 1, Indep = 2.
+        icon = ""; //Custom Icon
+    };
 };
 
-class CfgVehicles
+class CfgEditorSubcategories
 {
-    #include "backpacks.hpp"
-};
-
-class CfgGroups
-{
-    #include "groups.hpp"
-};
-
-class CfgAmmo
-{
-	#include "data\ammo.hpp"
-};
-
-class CfgMagazines
-{
-	#include "data\magazines.hpp"
+    class EdSubCat_O_OCLF_A_A
+    {
+        displayName = "OCLF Army (Arctic)";
+    };
+    class EdSubCat_O_OCLF_A_D
+    {
+        displayName = "OCLF Army (Desert)";
+    };
+    class EdSubCat_O_OCLF_A_O
+    {
+        displayName = "Orbital Recon Commando Shocktroops";
+    };
+    class EdSubCat_O_OCLF_A_T
+    {
+        displayName = "OCLF Army (Tropic)";
+    };
+    class EdSubCat_O_OCLF_A_W
+    {
+        displayName = "OCLF Army (Woodland)";
+    };
+    class EdSubCat_O_OCLF_A_AAC
+    {
+        displayName = "Air Assault Corps";
+    };
 };

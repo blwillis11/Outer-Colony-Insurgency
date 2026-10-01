@@ -1,4 +1,4 @@
-#define COMPONENT blackhorse
+#define COMPONENT Blackhorse
 #define COMPONENT_BEAUTIFIED Blackhorse
 #include "\z\OCI\addons\main\script_mod.hpp"
 

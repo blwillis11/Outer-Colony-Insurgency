@@ -7,25 +7,11 @@ class cfgFactionClasses
         side = 0; // Opfor = 0, Blufor = 1, Indep = 2.
         icon = ""; //Custom Icon
     };
-    class OCI_OCLF_Fac
-    {
-        displayName = "[OCI] Outer Colony Liberation Front";
-        priority = 0; // Position in list.
-        side = 0; // Opfor = 0, Blufor = 1, Indep = 2.
-        icon = ""; //Custom Icon
-    };
     class OCI_10MEB_Fac
     {
         displayName = "[OCI] 10th Marine Expeditionary Brigade";
         priority = 0; // Position in list.
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
-        icon = ""; //Custom Icon
-    };
-    class OCI_BPG_Fac
-    {
-        displayName = "[OCI] Blackhorse Paramilitary Group";
-        priority = 0; // Position in list.
-        side = 2; // Opfor = 0, Blufor = 1, Indep = 2.
         icon = ""; //Custom Icon
     };
     class OCI_Peacekeepers_Fac
@@ -36,6 +22,13 @@ class cfgFactionClasses
         icon = ""; //Custom Icon
     };
     class OCI_Militia_Fac
+    {
+        displayName = "[OCI] Outer Colony Militia";
+        priority = 0; // Position in list.
+        side = 2; // Opfor = 0, Blufor = 1, Indep = 2.
+        icon = ""; //Custom Icon
+    };
+    class OCI_Militia_OPFOR_Fac
     {
         displayName = "[OCI] Outer Colony Militia";
         priority = 0; // Position in list.
@@ -65,12 +58,6 @@ class CfgEditorCategories
     class OCI_OCI_EdCat // Category class, you point to it in editorCategory property
 	{
 		displayName = "[OCI] Outer Colony Insurgency"; // Name visible in the list
-		scopeCurator=2;
-		scopeeditor=2;
-	};
-    class OCI_OCLF_EdCat // Category class, you point to it in editorCategory property
-	{
-		displayName = "[OCI] Outer Colony Liberation Front"; // Name visible in the list
 		scopeCurator=2;
 		scopeeditor=2;
 	};
@@ -115,10 +102,6 @@ class CfgEditorSubcategories
     class OCI_Infantry_EdSubCat
     {
         displayName = "Infantry";
-    };
-    class OCI_ORCS_EdSubCat
-    {
-        displayName = "Orbital Recon Commando Shocktroops";
     };
     class OCI_ECH_Infantry_EdSubCat
     {

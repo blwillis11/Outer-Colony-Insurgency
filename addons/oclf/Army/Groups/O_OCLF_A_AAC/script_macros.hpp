@@ -1,0 +1,3 @@
+#define SIDE East
+#define SIDE_ID 0
+#define FACTION DOUBLES(PREFIX,SUBCOMPONENT3)

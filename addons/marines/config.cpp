@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class OCI_Marines {
-        name = COMPONENT_NAME;
+        name = Q(COMPONENT_NAME);
 		units[] = 
         {
             "OCI_Marine_Rifleman_AT",

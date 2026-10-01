@@ -6,7 +6,7 @@ class CfgPatches
     class OCI_Militia
     {
         authors[] = {"B. Salmon"};
-        name = "Outer Colony Militia";
+        name = Q(COMPONENT_NAME);
         
         units[]=
         {

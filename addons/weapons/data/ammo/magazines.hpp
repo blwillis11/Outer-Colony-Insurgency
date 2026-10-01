@@ -45,7 +45,7 @@ class OCI_95x40_36Rnd_Mag:TCP_36Rnd_95x40_Mag
 {
     displayName="[OCI] 36Rnd 9.5x40mm Magazine";
     author= AUTHOR;
-    ammo="OCI_95x40_AP";
+    ammo="OCI_B_95x40_Ball";
 };
 
 // Launcher

@@ -88,11 +88,7 @@ class CfgVehicles {
 			"z\OCI\addons\marines\data\vest\medic\vest_M43A_03_CO.paa"
 		};
   };
-
-    class SoldierWB;
-    class B_Soldier_base_F : SoldierWB {
-        class EventHandlers;
-    };
+    class B_Soldier_base_F;
     class OCI_10MEBBase: B_Soldier_base_F
     {
         scope = 0;
@@ -107,10 +103,10 @@ class CfgVehicles {
         camouflage = 1.4;
 
         identityTypes[] = {"Head_Euro","LanguagePER_F","G_IRAN_default"};
-        allowedfacewear[] = {""};
-        allowedHeadgear[] = {""};
-        allowedHeadgearB[] = {""};
-        headgearList[] = {""};
+        allowedfacewear[] = {};
+        allowedHeadgear[] = {};
+        allowedHeadgearB[] = {};
+        headgearList[] = {};
 
         uniformClass = "TCP_U_B_CBUU_FieldTop_Full_Gloves_Bloused_Woodland";
     };
@@ -189,8 +185,8 @@ class CfgVehicles {
         weapons[] = {"OCI_M7_SMG","OPTRE_M6G_SF", "Throw", "Put"};
         respawnWeapons[] = {"OCI_M7_SMG","OPTRE_M6G_SF", "Throw", "Put"};
 
-        linkedItems[] = {"OCI_CEArmour","OCI_CH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
-        respawnLinkedItems[] = {"OCI_CEArmour","OCI_CH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
+        linkedItems[] = {"OCI_CEArmour","OCI_CH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"OCI_CEArmour","OCI_CH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         magazines[] = {"Chemlight_green","Chemlight_green","HandGrenade","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
         respawnMagazines[] = {"Chemlight_green","Chemlight_green","HandGrenade","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
@@ -205,10 +201,10 @@ class CfgVehicles {
         displayName = "[OCI] Marine Medic";
 
         identityTypes[] = {"Head_Euro","LanguagePER_F","G_IRAN_default"};
-        allowedfacewear[] = {""};
-        allowedHeadgear[] = {""};
-        allowedHeadgearB[] = {""};
-        headgearList[] = {""};
+        allowedfacewear[] = {};
+        allowedHeadgear[] = {};
+        allowedHeadgearB[] = {};
+        headgearList[] = {};
 
         facewear = "";
 
@@ -357,8 +353,8 @@ class CfgVehicles {
         weapons[] = {"OCI_SRS99","OPTRE_M6G_SF", "Throw", "Put"};
         respawnWeapons[] = {"OCI_SRS99","OPTRE_M6G_SF", "Throw", "Put"};
 
-        linkedItems[] = {"OCI_CEArmour","OCI_CH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
-        respawnLinkedItems[] = {"OCI_CEArmour","OCI_CH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
+        linkedItems[] = {"OCI_CEArmour","OCI_CH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"OCI_CEArmour","OCI_CH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         magazines[] = {"OCI_4Rnd_127x99_Mag_APFSDS","OCI_4Rnd_127x99_Mag_APFSDS","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
         respawnMagazines[] = {"OCI_4Rnd_127x99_Mag_APFSDS","OCI_4Rnd_127x99_Mag_APFSDS","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
@@ -384,11 +380,11 @@ class CfgVehicles {
         weapons[] = {"OCI_MA40","OCI_M41_SSR", "Throw", "Put"};
         respawnWeapons[] = {"OCI_MA40","OCI_M41_SSR", "Throw", "Put"};
 
-        linkedItems[] = {"OCI_CEArmourPouch","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMUA"};
-        respawnLinkedItems[] = {"OCI_CEArmourPouch","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMUA"};
+        linkedItems[] = {"OCI_CEArmourPouch","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"OCI_CEArmourPouch","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-        magazines[] = {"OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OPTRE_M41_Twin_HEAT"};
-        respawnMagazines[] = {"OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OPTRE_M41_Twin_HEAT"};
+        magazines[] = {"OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_M41_Twin_HEAT"};
+        respawnMagazines[] = {"OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_32Rnd_762x51_Mag","OCI_M41_Twin_HEAT"};
 
         items[] = {"ACE_EarPlugs","FirstAidKit"};
         respawnItems[] = {"ACE_EarPlugs","FirstAidKit"};
@@ -438,8 +434,8 @@ class CfgVehicles {
         weapons[] = {"OCI_M7_SMG","OPTRE_M6G_SF", "Throw", "Put"};
         respawnWeapons[] = {"OCI_M7_SMG","OPTRE_M6G_SF", "Throw", "Put"};
 
-        linkedItems[] = {"OCI_CEArmour","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
-        respawnLinkedItems[] = {"OCI_CEArmour","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
+        linkedItems[] = {"OCI_CEArmour","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"OCI_CEArmour","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         magazines[] = {"Chemlight_green","Chemlight_green","HandGrenade","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
         respawnMagazines[] = {"Chemlight_green","Chemlight_green","HandGrenade","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OCI_48Rnd_5x23Caseless_FMJ_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
@@ -600,8 +596,8 @@ class CfgVehicles {
         weapons[] = {"OCI_SRS99","OPTRE_M6G_SF", "Throw", "Put"};
         respawnWeapons[] = {"OCI_SRS99","OPTRE_M6G_SF", "Throw", "Put"};
 
-        linkedItems[] = {"OCI_CEArmour","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
-        respawnLinkedItems[] = {"OCI_CEArmour","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch","LM_OPCAN_COMMCAMSNI"};
+        linkedItems[] = {"OCI_CEArmour","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+        respawnLinkedItems[] = {"OCI_CEArmour","OCI_ECH43A_Helmet","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
         magazines[] = {"OCI_4Rnd_127x99_Mag_APFSDS","OCI_4Rnd_127x99_Mag_APFSDS","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
         respawnMagazines[] = {"OCI_4Rnd_127x99_Mag_APFSDS","OCI_4Rnd_127x99_Mag_APFSDS","Chemlight_green","Chemlight_green","HandGrenade","HandGrenade","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};

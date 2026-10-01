@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class OCI_Objects {
-        name = COMPONENT_NAME;
+        name = Q(COMPONENT_NAME);
 		units[] = 
         {
 			"Land_OCI_FlagPole_01_OCI",

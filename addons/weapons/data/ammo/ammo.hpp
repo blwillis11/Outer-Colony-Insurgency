@@ -3,16 +3,19 @@ class TCP_B_762x51_Ball;
 
 class OCI_B_762x51_Ball: TCP_B_762x51_Ball
 {
+    hit = 9;
 };
 
 class TCP_B_762x51_BTHP;
 class OCI_B_762x51_BTHP: TCP_B_762x51_BTHP
 {
+    hit = 9;
 };
 
 class TCP_B_762x51_AP;
 class OCI_B_762x51_HVAP: TCP_B_762x51_AP
 {
+    hit = 8;
 };
 
 // 9.5x40mm BR
@@ -20,6 +23,7 @@ class OCI_B_762x51_HVAP: TCP_B_762x51_AP
 class TCP_B_95x40_Ball;
 class OCI_B_95x40_Ball: TCP_B_95x40_Ball
 {
+    hit = 13;
 };
 
 // 12 gauge
@@ -48,6 +52,7 @@ class OCI_12Gauge_Smoke: OPTRE_12Gauge_Smoke
 class TCP_B_5x23_Ball;
 class OCI_5x23_Caseless:TCP_B_5x23_Ball
 {
+    hit = 6;
 };
 
 // 12.7x40mm
@@ -55,6 +60,7 @@ class OCI_5x23_Caseless:TCP_B_5x23_Ball
 class TCP_B_127x30_Ball;
 class OCI_B_127x30_Ball:TCP_B_127x30_Ball
 {
+    hit = 6;
 };
 
 // 14.5x114mm
@@ -62,7 +68,7 @@ class TCP_B_127x99_APFSDS;
 class OCI_B_127x99_APFSDS:TCP_B_127x99_APFSDS
 {
     caliber=4;
-    hit=105;
+    hit=23;
     ACE_ballisticCoefficients[]= {0.757};
     ACE_muzzleVelocities[] = {1400,1400};
     ACE_caliber=12.7;

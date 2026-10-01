@@ -1,39 +1,33 @@
 #include "script_component.hpp"
 
-class CfgPatches {
-    class OCI_Blackhorse {
-        name = COMPONENT_NAME;
-		units[] = {
-            "OCI_Blackhorse_Rifleman_AT",
-            "OCI_Blackhorse_Rifleman",
-            "OCI_Blackhorse_Marksman",
-            "OCI_Blackhorse_RTO_Operator",
-            "OCI_Blackhorse_Team_Lead",
-            "OCI_Blackhorse_Grenadier",
-            "OCI_Blackhorse_Autorifleman",
-            "OCI_Blackhorse_Sniper"
-        }; 
-        weapons[] = {
-           
-        };
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {
-			"OCI_Main",
-            "OPTRE_FC_Units_Marines"
-        };
-        authors[] = {"Salmon"}; // sub array of authors, considered for the specific addon, can be removed or left empty {}
-        author = AUTHOR; // primary author name, either yours or your team's, considered for the whole mod
-        VERSION_CONFIG;
+class CfgPatches
+{
+	class ADDON
+	{
+		addonRootClass = QUOTE(MAIN_ADDON);
+
+		name = QUOTE(COMPONENT_NAME);
+		units[] = {};
+		// Used for forcing load order
+		requiredAddons[] = {QUOTE(MAIN_ADDON), QUOTE(OPTRE_FC_Units_Marines)};
         skipWhenMissingDependencies = 1;
-    };
+	};
 };
 
-class TCP_equipmentTypes;
-class TCP_uniformDecals;
-class UniformItem;
-class ItemInfo;
+class CfgFactionClasses
+{
+	class OCI_Blackhorse
+	{
+		displayName = QUOTE(TAG Blackhorse PMG);
+		priority = 0;
+		side = 2;
+	};
+};
 
-// configs go here
-#include "CfgWeapons.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgGroups.hpp"
+class CfgEditorSubcategories
+{
+	class EdSubCat_O_BH_PMG_S
+	{
+		displayName = QUOTE(Infantry);
+	};
+};

@@ -1,20 +1,16 @@
 #include "script_component.hpp"
-#include "script_macros.hpp"
 
 class CfgPatches
 {
-    class OCI_Main
+    class ADDON
     {
-        name = COMPONENT_NAME;
-        units[] = {};
-        weapons[] = {};
+        name = Q(TITLE);
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "TCP_Data"
+            "TCP_Data",
+            "cba_main"
         };             // Addon dependencies
-        authors[] = {                       // Authors
-            "Salmon"
-        };
+        units[] = {};
         author = AUTHOR;                   // MACRO
         VERSION_CONFIG;
     };
@@ -30,7 +26,7 @@ class CfgMods {
         hidePicture = "true";               // Hide the picture in the expansions menu.
         hideName = "true";                  // Hide the name in the expansions menu.
         actionName = "Website";             // Text displayed in the action button in the main menu.
-        action = CSTRING(URL);              // Website URL, that is opened when the action button is clicked.
+        action = "";              // Website URL, that is opened when the action button is clicked.
         //description = "";                 // Short description, that is displayed in the main menu.
     };
 };

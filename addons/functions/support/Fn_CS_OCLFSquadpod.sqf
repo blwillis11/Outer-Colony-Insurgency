@@ -126,20 +126,15 @@ if (!(_pos isEqualTo [0, 0, 0])) then {
 		private _spawnforward = _projectile modelToWorld [0, 0, 0.5];
 		private _spawn = _spawnforward;
 		private _list = [
-			"OCLF_Rifleman",
-			"OCLF_Medic",
-			"OCLF_Rifleman_AT",
-			"OCLF_Rifleman_AA",
-			"OCLF_AutoRifleman",
-			"OCLF_Grenadier",
-			"OCLF_SquadLead",
-			"OCLF_RTO",
-			"OCLF_Sniper",
-			"OCLF_Spotter",
-			"OCLF_TeamLead",
-			"OCLF_Light_Rifleman",
-			"OCLF_Rifleman_BR",
-			"OCLF_Marksman"
+			"OCI_O_OCLF_A_T_Soldier",
+			"OCI_O_OCLF_A_T_Soldier_Medic",
+			"OCI_O_OCLF_A_T_Soldier_A",
+			"OCI_O_OCLF_A_T_Soldier_AT",
+			"OCI_O_OCLF_A_T_Soldier_AR",
+			"OCI_O_OCLF_A_T_Soldier_GL",
+			"OCI_O_OCLF_A_T_Soldier_SL",
+			"OCI_O_OCLF_A_T_Soldier_Spotter",
+			"OCI_O_OCLF_A_T_Soldier_TL"
 		];
 
 		private _listout = [];

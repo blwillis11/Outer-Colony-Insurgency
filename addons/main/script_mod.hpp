@@ -1,4 +1,5 @@
 #define MAINPREFIX z
+#define TITLE Outer Colony Insurgency
 #define PREFIX OCI
 
 #define AUTHOR QUOTE(OCI Dev Team)
@@ -23,11 +24,4 @@
 
 #ifdef RELEASE_BUILD
 	// insert debug defines here
-#endif
-
-#ifdef COMPONENT_BEAUTIFIED
-    // #define COMPONENT_NAME QUOTE(91st MRC Auxillary - COMPONENT_BEAUTIFIED)
-    #define COMPONENT_NAME QUOTE(Outer Colony Insurgency - COMPONENT_BEAUTIFIED)
-#else
-    #define COMPONENT_NAME QUOTE(Outer Colony Insurgency - COMPONENT)
 #endif

@@ -41,7 +41,7 @@ waitUntil {
 		_deleteChutes,
 		_deleteHEVSafter,
 		true // denotes use of custom launch delay
-	] call OCI_Fnc_HEV;
+	] call OPTRE_Fnc_HEV;
 } call CBA_fnc_directCall;
 
 true

@@ -2,13 +2,14 @@
 
 class CfgPatches {
     class OCI_Peacekeepers {
-        name = COMPONENT_NAME;
+        name = Q(COMPONENT_NAME);
 		units[] = 
         {
             "OCI_Peacekeeper_RTO_Operator",
             "OCI_Peacekeeper_Medic",
             "OCI_Peacekeeper_Rifleman",
-            "OCI_Peacekeeper_Team_Lead"
+            "OCI_Peacekeeper_Team_Lead",
+            "OCI_Peacekeeper_Officer"
         }; 
         weapons[] = {
            

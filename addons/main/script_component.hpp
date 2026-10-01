@@ -1,4 +1,4 @@
-#define COMPONENT main
+#define COMPONENT Main
 #define COMPONENT_BEAUTIFIED Main
 #include "\z\OCI\addons\main\script_mod.hpp"
 

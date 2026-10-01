@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class OCI_Functions {
-        name = COMPONENT_NAME;
+        name = Q(COMPONENT_NAME);
 		units[] = {
 			"OCI_Module_HEV",
 			"OCI_Module_ORCSDrop",

@@ -1,0 +1,10 @@
+class Uniform_Base;
+UNIFORM_WEP_CLASS_DEFS
+
+NEW_UNIFORM_WEP_CLASS_DEFS(FieldTop,Full,M81)
+NEW_UNIFORM_WEP_CLASS_DEFS(FieldTop,HalfRoll,M81)
+NEW_UNIFORM_WEP_CLASS_DEFS(FieldTop,QuarterRoll,M81)
+
+class TCP_U_B_CBUU_TShirt_Tucked_Base : Uniform_Base {class ItemInfo;};
+
+TCP_TSHIRT_TUCKED_WEP_CLASS_DEFS(M81)

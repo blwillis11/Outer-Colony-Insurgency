@@ -45,16 +45,16 @@ private _units = switch (typeName (_this select 0)) do {
 		private _selectedUnitTypes = [];
 		for "_i" from 1 to (_this select 0) do {
 			private _randomUnitType = selectRandom [
-				"OCLF_ORCS_Rifleman",
-				"OCLF_ORCS_TeamLead",
-				"OCLF_ORCS_Sniper",
-				"OCLF_ORCS_Autorifleman",
-				"OCLF_ORCS_Grenadier",
-				"OCLF_ORCS_Marksman",
-				"OCLF_ORCS_Rifleman_BR",
-				"OCLF_ORCS_Medic",
-				"OCLF_ORCS_Rifleman_AA",
-				"OCLF_ORCS_Rifleman_AT"
+				"OCI_O_OCLF_A_O_Soldier",
+				"OCI_O_OCLF_A_O_Soldier_TL",
+				"OCI_O_OCLF_A_O_Soldier_Sniper",
+				"OCI_O_OCLF_A_O_Soldier_AR",
+				"OCI_O_OCLF_A_O_Soldier_GL",
+				"OCI_O_OCLF_A_O_Soldier_M",
+				"OCI_O_OCLF_A_O_Soldier_Spotter",
+				"OCI_O_OCLF_A_O_Soldier_Medic",
+				"OCI_O_OCLF_A_O_Soldier_AA",
+				"OCI_O_OCLF_A_O_Soldier_AT"
 			];
 
 			_selectedUnitTypes pushBack _randomUnitType;
@@ -62,7 +62,7 @@ private _units = switch (typeName (_this select 0)) do {
 		_selectedUnitTypes
 	};
 	default {
-		["OCLF_ORCS_Rifleman_AT", "OCLF_ORCS_TeamLead", "OCLF_ORCS_Marksman", "OCLF_ORCS_Medic"]
+		["OCI_O_OCLF_A_O_Soldier", "OCI_O_OCLF_A_O_Soldier_TL", "OCI_O_OCLF_A_O_Soldier_M", "OCI_O_OCLF_A_O_Soldier_Medic"]
 	};
 };
 

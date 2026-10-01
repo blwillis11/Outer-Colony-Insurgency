@@ -1,7 +1,8 @@
 *.pbo
-.hemttout
-hemtt
+.hemttout/
 hemtt.exe
 *.biprivatekey
 .psd
-pngs
+.hemtt/
+pngs/
+releases/

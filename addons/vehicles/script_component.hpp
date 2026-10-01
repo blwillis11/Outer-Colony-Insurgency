@@ -1,4 +1,4 @@
-#define COMPONENT vehicles
+#define COMPONENT Vehicles
 #define COMPONENT_BEAUTIFIED Vehicles
 #include "\z\OCI\addons\main\script_mod.hpp"
 

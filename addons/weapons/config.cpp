@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class OCI_Weapons {
-        name = COMPONENT_NAME;
+        name = Q(COMPONENT_NAME);
 		units[] = 
         {
         }; 

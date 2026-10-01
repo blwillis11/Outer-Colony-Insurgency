@@ -10,6 +10,10 @@ include = [
     "logo_co.paa",
 ]
 
+[hemtt.publish]
+changelog = "CHANGELOG.md"
+description = "README.md"
+
 [hemtt.launch.default]
 workshop = [
     "450814997",  # CBA_A3

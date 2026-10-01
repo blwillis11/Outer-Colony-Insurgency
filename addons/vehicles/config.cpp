@@ -1,22 +1,16 @@
 #include "script_component.hpp"
 
-class CfgPatches {
-    class OCI_Vehicles {
-		addonRootClass="OCI_Main";
-        name = COMPONENT_NAME;
-		units[] = 
-        {
-        }; 
-        weapons[] = {
-        };
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {
-            "OCI_Main"
-        };
-        authors[] = {"Salmon"}; // sub array of authors, considered for the specific addon, can be removed or left empty {}
-        author = AUTHOR; // primary author name, either yours or your team's, considered for the whole mod
-        VERSION_CONFIG;
-    };
+class CfgPatches
+{
+	class ADDON
+	{
+		addonRootClass = QUOTE(MAIN_ADDON);
+
+		name = QUOTE(COMPONENT_NAME);
+		units[] = {};
+		// Used for forcing load order
+		requiredAddons[] = {QUOTE(MAIN_ADDON)};
+	};
 };
 
 class CfgWeapons
@@ -38,4 +32,14 @@ class CfgWeapons
             "6Rnd_155mm_Mo_smoke"
         };
     };
+};
+
+class CfgAmmo
+{
+	#include "ammo.hpp"
+};
+
+class CfgMagazines
+{
+	#include "magazines.hpp"
 };

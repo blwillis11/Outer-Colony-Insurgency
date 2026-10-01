@@ -28,10 +28,10 @@ class CfgVehicles
 		};
 	};
 	
-	class FlagCarrier_Asym;
-	class FlagCarrier;
+	class Land_TCP_PortableMast_01_Flag_Olive_TCP;
+	class Land_TCP_PortableMast_01_Flag_Olive_TCP_dmg;
 
-	class Land_OCI_FlagPole_01_OCI : FlagCarrier_Asym
+	class Land_OCI_FlagPole_01_OCI : Land_TCP_PortableMast_01_Flag_Olive_TCP
 	{
 		author = AUTHOR;
 		displayName = "Flag (OCI)";
@@ -46,7 +46,7 @@ class CfgVehicles
 		};
 	};
 
-	class Land_OCI_FlagPole_02_OCI : FlagCarrier
+	class Land_OCI_FlagPole_02_OCI : Land_TCP_PortableMast_01_Flag_Olive_TCP_dmg
 	{
 		author = AUTHOR;
 		displayName = "Flag (OCI) (Damaged)";
